@@ -20,7 +20,13 @@ export default function App() {
     const response = await api.post(endpoint);
     const { likes } = response.data;
 
-    return likes
+    setRepositories(
+      repositories.map(repo => (
+        (repo.id === id
+          ? Object.assign({}, repo, { likes })
+          : repo)
+      ))
+    )
   }
 
   return (

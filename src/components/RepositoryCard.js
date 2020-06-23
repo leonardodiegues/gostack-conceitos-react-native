@@ -7,7 +7,7 @@ export default function Repository(props) {
   const { repository, style, addLikes } = props;
   const { id, title, techs, likes } = repository;
 
-  const likesText = `${likes} curtida`;
+  let likesText = `${likes} curtida`;
 
   if (likes > 1) {
     likesText += 's';
