@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from "react-native";
 
-import Button from './Button';
+import RepositoryLikeButton from './RepositoryLikeButton';
 
 export default function Repository(props) {
   const { repository, style, addLikes } = props;
@@ -37,7 +37,7 @@ export default function Repository(props) {
             {likesText}
           </Text>
         </View>
-        <Button
+        <RepositoryLikeButton
           id={id}
           style={style}
           callback={addLikes}

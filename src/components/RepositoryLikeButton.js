@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
-export default function Button(props) {
+export default function RepositoryLikeButton(props) {
   const { id, style, callback } = props;
 
   return(
